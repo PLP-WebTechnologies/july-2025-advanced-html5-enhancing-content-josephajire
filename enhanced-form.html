@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Enhanced HTML Demo with Agriculture-related Topic</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Enhanced HTML Demo with Agriculture-related Topic</h1>
+    <p>This simple webpage demonstrates the use of enhanced HTML elements such as lists, tables, media, and form.</p>
+  </header>
+
+  <main>
+    <!-- Section for Lists -->
+    <h2>Nested List Demo: Top Agricultural Crops</h2>
+    <ol>
+      <li> Corn (Maize)
+        <ol type="i">
+          <li>Popcorn</li>
+          <li>White maize</li>
+          <li>Yellow maize</li>
+        </ol>
+      </li>
+      <li>Wheat</li>
+      <li>Rice</li>
+      <li>Soybeans</li>
+      <li>Potatoes
+        <ul>
+          <li>Sweet potatoes</li>
+          <li>Irish potatoes</li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>Definition List Demo: Crops and Botanical Names</h2>
+    <dl>
+      <dt>Maize</dt>
+      <dd>Zea mays</dd>
+      <dt>Rice</dt>
+      <dd>Oryza sativa</dd>
+      <dt>Sorghum</dt>
+      <dd>Sorghum bicolor</dd>
+      <dt>Wheat</dt>
+      <dd>Triticum aestivum</dd>
+    </dl>
+
+    <!-- Section for Media -->
+      <h2>Multimedia Demo</h2>
+      <h3>Organic Farming Image</h3>
+      <img src="organic-farming.png" alt="Organic Farming Image" width="500" height="350" />
+
+      <h3>FAO Audio</h3>
+      <audio controls>
+        <source src="fao-audio.mp3" type="audio/mpeg">
+      </audio>
+
+      <h3>FAO Video</h3>
+      <video width="640" height="360" controls>
+        <source src="fao-video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+
+    <!-- Section for Table -->
+    <h2>Table Demo: Comparison of Irrigation Methods</h2>
+    <table border="1" summary="Comparison of different irrigation methods with their advantages and disadvantages">
+      <thead>
+        <tr>
+          <th>Method</th>
+          <th>Advantages</th>
+          <th>Disadvantages</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Drip Irrigation</td>
+          <td>Water efficient, reduces weed growth, suitable for various terrains</td>
+          <td>Initial setup cost is high, requires maintenance</td>
+        </tr>
+        <tr>
+          <td>Surface Irrigation</td>
+          <td>Simple, low-cost, suitable for flat fields</td>
+          <td>Water wastage, soil erosion risk</td>
+        </tr>
+        <tr>
+          <td>Sprinkler Irrigation</td>
+          <td>Good for uneven terrain, uniform water distribution</td>
+          <td>Energy intensive, susceptible to wind loss</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Section for Form -->
+    <section aria-labelledby="feedback-form">
+      <h2 id="feedback-form">Agriculture Feedback Form</h2>
+      <form action="#" method="post">
+
+        <fieldset>
+          <legend>Personal Details</legend>
+          <label for="farmer-name">Full Name *</label>
+          <input type="text" id="farmer-name" name="farmer-name" placeholder="Enter your full name" autocomplete="name"
+            required minlength="3" pattern="^[A-Za-zÀ-ÿ '-]+$"
+            title="Only letters, spaces, apostrophes, and hyphens allowed" />
+
+          <br><br>
+
+          <label>Gender *</label>
+          <input type="radio" id="gender-male" name="gender" value="male" required />
+          <label for="gender-male">Male</label>
+
+          <input type="radio" id="gender-female" name="gender" value="female" />
+          <label for="gender-female">Female</label>
+
+          <br><br>
+
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" placeholder="your_email@example.com" autocomplete="email"
+            required />
+
+          <br><br>
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="+1234567890" pattern="^\+?[0-9\s\-]{7,15}$"
+            title="Phone number should contain 7 to 15 digits and can include +, spaces, or dashes"
+            autocomplete="tel" />
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+          <legend>Other Information and Comment</legend>
+
+          <label for="farm-size">Farm Size (hectares) *</label>
+          <input type="number" id="farm-size" name="farm-size" placeholder="E.g., 10" min="1" max="10000" required
+            autocomplete="off" />
+
+          <br><br>
+
+          <label for="main-crop">Main Crop Grown *</label>
+          <select id="main-crop" name="main-crop" required autocomplete="off">
+            <option value="" disabled selected>Select your main crop</option>
+            <option value="wheat">Wheat</option>
+            <option value="rice">Rice</option>
+            <option value="corn">Corn (Maize)</option>
+            <option value="soybeans">Soybeans</option>
+            <option value="potatoes">Potatoes</option>
+            <option value="other">Other</option>
+          </select>
+
+          <br><br>
+
+          <label for="irrigation-used">Irrigation Method Used</label>
+          <input type="text" id="irrigation-used" name="irrigation-used" placeholder="E.g., Drip, Sprinkler, Surface"
+            autocomplete="off" minlength="3" />
+
+          <br><br>
+          <label for="comment">Comments:</label>
+          <br>
+          <textarea id="comments" name="comments" rows="4" cols="50"></textarea>
+          <br><br>
+        </fieldset>
+
+        <p>
+          <button type="submit">Submit Feedback</button>
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Copyright © 2025 Enhanced HTML Elements with Agriculture Insights. All rights reserved.</p>
+  </footer>
+
+</body>
+
+</html>
